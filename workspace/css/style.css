@@ -26,10 +26,28 @@ body{
 }
 
 .menu__avatar{
+    position: relative;
+}
+.menu__avatar--img{
     width: 50px;
     margin-right: 16px;
     border-radius: 50%;
 }
+
+.menu__avatar--bubble{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    background-color: #026AD1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .header__title{
     padding: 20px 40px;
@@ -62,7 +80,7 @@ body{
     margin: 0 auto;
     padding: 0 20px;
 }
-.content__card{
+.card{
 
     background-color: white;
     border : 1px solid #EFEFEE;
@@ -71,9 +89,10 @@ body{
     margin: 0 auto;
     display: flex;
     align-items: center;
+    margin-bottom:  20px;
 }
 
-.content__card--circle{
+.card__circle{
     width: 100px;
     height: 100px;
     background-color: #E5EFF5 ;
@@ -81,17 +100,29 @@ body{
     margin-right: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.content__card--icone{
+.card__icone{
     width: 50px;
 }
-.content__card--title{
+.card__title{
     font-size: 32px;
     margin: 0 0 8px;
 }
-.content__card--description{
+.card__description{
     color: #B4B4B4 ;
     margin: 0;
 }
 
+.card__circle--red{
+    width: 100px;
+    height: 100px;
+    background-color: #FEE0DF ;
+    border-radius: 50%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
