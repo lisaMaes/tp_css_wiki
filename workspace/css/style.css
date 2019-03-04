@@ -34,9 +34,10 @@ body{
     border-radius: 50%;
 }
 
-.menu__avatar--bubble{
+.menu__avatar::after{
     width: 24px;
     height: 24px;
+    content:"2";
     border-radius: 50%;
     position: absolute;
     right: 0;
