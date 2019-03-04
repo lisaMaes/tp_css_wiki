@@ -19,17 +19,19 @@
         <div class="menu">
             <div class="menu__avatar">
                 <img src="../assets/avatar.jpg" alt="avatar" class="menu__avatar--img">
-
             </div>
             <div class="menu__name">Marie Thompson</div>
+            <div class="menu__open menu__open--invisible" id="toggle">
+                 Vous avez un nouveau message
+            </div>
         </div>
     </div>
     <div class="background">
 
         <div class="content">
             <div class="content__title">
-                <h1 class="content__title--princ">Ressources HTML et CSS</h1>
-                <p class="content__title--subtitle">Tout pour savoir faire de belles pages web</span>
+                <h1 class="content__princ">Ressources HTML et CSS</h1>
+                <p class="content__subtitle">Tout pour savoir faire de belles pages web</span>
             </div>
             <div class="card">
                 <div class="card__circle">
@@ -41,7 +43,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card__circle--red">
+                <div class="card__circle card__circle--red">
                     <img src="../assets/responsive.svg" class="card__icone" alt="icone_telephone">
                 </div>
                 <div class="card__text">
@@ -50,9 +52,12 @@
                 </div>
             </div>
         </div>
-
-
-
     </div>    
 </body>
+<script type="text/javascript">
+    
+    document.querySelector('.menu').addEventListener("click", function() {        
+        document.querySelector('.menu__open').classList.toggle('menu__open--invisible');
+    });
+</script>
 </html>

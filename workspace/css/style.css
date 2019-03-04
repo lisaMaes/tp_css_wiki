@@ -64,18 +64,38 @@ body{
     flex: none;
     align-items: center;
     border-left: 1px solid #EFEFEE; 
+    position: relative;
 }
+
+.menu__open{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 100%;
+    left:0;
+    border: 1px solid #EFEFEE; 
+    background-color: white;
+    display: flex;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__open--invisible{
+    visibility: hidden;
+}
+
 
 .content__title{
     padding: 40px 0;
 }
-.content__title--princ{
+.content__princ{
     font-size: 40px;
     font-weight: inherit;
 }
 
 
-.content__title--subtitle{
+.content__subtitle{
     margin-top: 20px;
     color: #B4B4B4 ;
 }
@@ -151,12 +171,14 @@ body{
 
     .card{
         flex-direction: column;
+        justify-content: center;
         align-content: center;
         padding: 20px;
     }
 
     .card__text{
         margin-top : 20px;
+        text-align: center;
     }
 
 
