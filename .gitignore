@@ -1,0 +1,10 @@
+.idea
+*.iml
+.classpath
+.project
+.settings
+/screenshots
+/solutions
+TP.md
+TP.html
+
